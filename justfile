@@ -8,7 +8,16 @@ set dotenv-load
 
 help:
   @just -l
-  
+
+project-name:
+	echo $PROJECT_NAME
+	
+
+set-key-path:
+	#!/usr/bin/env bash
+	export GOOGLE_APPLICATION_CREDENTIALS="/Users/mjboothaus/icloud/DataBooth/Clients/MichaelAbrahams/abrahams-fiji-times-cccf3af76c6c.json"
+
+
 docs:
 	open $DOCS_URL
 
